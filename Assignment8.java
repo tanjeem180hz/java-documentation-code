@@ -4,8 +4,22 @@
 // Step 2: Ask the candidate are you fulent in English? y/n 
 // Step 3: if the candidate has passed masters and also have fluent english skill then print you are eligible to for the job interview
 // Step 4: else print Sorry. you are not eligible to for the job interview
-public class Assignment8 {
-  public static void main(String[] args) {
+package com.mycompany.assignment;
 
-  }
+import java.util.Scanner;
+
+public class Assignment{
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Have you completed your masters?");
+        char master = input.next().charAt(0);
+        System.out.println("Are you fluent in english?");
+        char english = input.next().charAt(0);
+        if(master == 'y' && english =='y'){
+            System.out.println("You are eligible to for the job interview.");
+        }
+        else{
+            System.out.println("Sorry.You are not eligible to for the job intterview.");
+                    }
+    }
 }
